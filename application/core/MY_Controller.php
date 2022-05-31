@@ -12,7 +12,7 @@ class MY_Controller extends CI_Controller
 		$this->load->model('Main_modal', 'main');
 	}
 
-	protected function uploadImage($upload, $exts='jpg|jpeg|png', $size=[], $name=null, $thumb=[])
+	protected function uploadImage($upload, $exts="jpg|jpeg|png|JPG|JPEG|PNG", $size=[], $name=null, $thumb=[])
     {
         $this->load->library('upload');
         $config = [

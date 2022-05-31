@@ -11,7 +11,6 @@
                     <th>NAME</th>
                     <th>mobile</th>
                     <th>email</th>
-                    <th>product</th>
                     <th class="target">ACTION</th>
                 </tr>
             </thead>

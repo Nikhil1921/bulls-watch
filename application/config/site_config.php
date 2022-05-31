@@ -4,37 +4,18 @@ $config['app_name'] = APP_NAME;
 $config['banners'] = 'uploads/banners/';
 $config['gallery'] = 'uploads/gallery/';
 $config['testimonials'] = 'uploads/testimonials/';
+$config['service'] = 'uploads/services/';
+$config['apply'] = 'uploads/apply/';
 
-$config['facebook'] = 'https://facebook.com/';
-$config['twitter'] = 'https://twitter.com/';
-$config['google-plus'] = 'https://google-plus.com/';
-$config['pinterest'] = 'https://pinterest.com/';
-$config['dribbble'] = 'https://dribbble.com/';
-$config['linkedin'] = 'https://linkedin.com/';
+$config['mobile'] = '+91 9428505555';
+$config['email'] = 'bullswatch09@gmail.com';
+$config['address'] = 'GF 11, KirtiSagar Complex, Near Aroma College, B/h Fortune Landmark hotel Usmanpura, Ahmedabad';
 
-
-$config['mobile1'] = '+91 98257 15712';
-$config['mobile2'] = '+91 70690 70928';
-$config['mobile3'] = '+919265314870';
-$config['email'] = 'silvicswoodveeners@gmail.com';
-$config['address1'] = 'Plot No 3, Block no 813/2, Nr. Raja Tyre Lane, Village : Rakanpur, Santej. Ahmedabad, India';
-$config['address2'] = 'Survey No. 447,Village : Borisana, Kadi - Thor Highway Road, Near Bhargav Oil industries, Borisana, Ta-Kadi, Dist-Mehsana';
-
-$config['contacts'] = [
-    [
-        'name' => 'Mr. Vijay Patel (Director)',
-        'contacts' => ['+91 9825715712']
-    ],
-    [
-        'name' => 'Mr. Hitendrasinh (Marketing Director)',
-        'contacts' => ['+91 9925239889']
-    ],
-    [
-        'name' => 'Mr. Viven Bovad',
-        'contacts' => ['+91 9913015712']
-    ],
-    [
-        'name' => 'Mr. Sanjay Patel',
-        'contacts' => ['+91 7069070928', '+91 7069070929']
-    ]
+$config['bank'] = [
+    'name' => 'AHMADABAD DISTRICT CO-OPERATIVE BANK LTD',
+    'branch' => 'Navrangpura',
+    'acc_no' => '107013782802',
+    'ifsc' => 'GSCB0ADC033',
 ];
+
+$config['gst'] = '24AXPPS1104D2ZR';

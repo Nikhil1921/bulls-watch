@@ -110,7 +110,8 @@ class Testimonial extends Admin_controller  {
             $post = [
                 't_name'       => $this->input->post('t_name'),
                 'description'  => $this->input->post('description'),
-                't_title'     => $this->input->post('t_title'),
+                't_title'      => $this->input->post('t_title'),
+                'is_approved'  => 1,
                 'image'        => $img
             ];
 

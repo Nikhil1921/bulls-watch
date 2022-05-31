@@ -4,16 +4,16 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 switch ($_SERVER['SERVER_NAME']) {
-    case 'www.bullswatch.com':
-    case 'bullswatch.com':
-    case 'https://www.bullswatch.com':
-    case 'https://bullswatch.com':
+    case 'www.thebullswatch.com':
+    case 'thebullswatch.com':
+    case 'https://www.thebullswatch.com':
+    case 'https://thebullswatch.com':
         $db['default'] = array(
             'dsn'   => '',
             'hostname' => 'localhost',
-            'username' => 'densehwm_demo',
+            'username' => 'thebulls_bullswatch',
             'password' => 'Densetek@2018',
-            'database' => 'densehwm_bullswatch',
+            'database' => 'thebulls_bullswatch',
             'dbdriver' => 'mysqli',
             'dbprefix' => '',
             'pconnect' => (ENVIRONMENT !== 'production'),

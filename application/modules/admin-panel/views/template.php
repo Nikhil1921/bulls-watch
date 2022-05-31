@@ -57,6 +57,12 @@
                         <li <?= $name === 'career' ? 'class="active"' : '' ?>>
                             <?= anchor(admin('career'), '<i class="fa fa-image"></i> career') ?>
                         </li>
+                        <li <?= $name === 'apply' ? 'class="active"' : '' ?>>
+                            <?= anchor(admin('apply'), '<i class="fa fa-users"></i> apply') ?>
+                        </li>
+                        <li <?= $name === 'inquiry' ? 'class="active"' : '' ?>>
+                            <?= anchor(admin('inquiry'), '<i class="fa fa-users"></i> inquiry') ?>
+                        </li>
                     </ul>
                 </div>
             </div>

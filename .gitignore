@@ -20,3 +20,5 @@ uploads/testimonials/*
 !uploads/testimonials/index.html
 uploads/gallery/*
 !uploads/gallery/index.html
+uploads/apply/*
+!uploads/apply/index.html

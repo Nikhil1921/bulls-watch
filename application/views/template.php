@@ -8,275 +8,214 @@
         <title><?= ucwords($title) ?> | <?= APP_NAME ?></title>
         <?= link_tag('assets/images/favicon.png', 'shortcut icon', 'image/png') ?>
         <?= link_tag('assets/images/favicon.png', 'icon', 'image/png') ?>
-        <?= link_tag('assets/css/bootstrap.css', 'stylesheet', 'text/css') ?>
-        <?= link_tag('assets/css/style.css', 'stylesheet', 'text/css') ?>
+
+        <?= link_tag('assets/css/animate.min.css', 'stylesheet', 'text/css') ?>
+        <?= link_tag('assets/css/all.min.css', 'stylesheet', 'text/css') ?>
+        <?= link_tag('assets/css/bootstrap.min.css', 'stylesheet', 'text/css') ?>
+        <?= link_tag('assets/css/magnific-popup.css', 'stylesheet', 'text/css') ?>
+        <?= link_tag('assets/css/carousel.min.css', 'stylesheet', 'text/css') ?>
+        <?= link_tag('assets/css/secrius-style.css', 'stylesheet', 'text/css') ?>
         <?= link_tag('assets/css/responsive.css', 'stylesheet', 'text/css') ?>
-        <?= link_tag('assets/css/color-themes/default-theme.css', 'stylesheet', 'text/css') ?>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="page-wrapper">
-            <!-- Preloader -->
-            <!-- <div class="preloader"></div> -->
-            <header class="main-header header-style-two">
-                <!--Header Top-->
-                <div class="header-top">
-                    <div class="auto-container">
-                        <div class="inner-container clearfix">
-                            <div class="top-left">
-                                <div>
-                                    <?= anchor('', img('assets/images/logo.png')); ?>
-                                </div>
-                                <div>
-                                    <ul class="clearfix">
-                                        <li><a href="mailto:<?= $this->config->item('email') ?>"><i class="fa fa-envelope-o clr_white"></i> <?= $this->config->item('email') ?></a></li>
-                                    </ul>
-                                </div>
+        <div id="menu-4" class="menu-4">
+            <nav class="navbar navbar-expand-lg top-nav navbar-fixed-top cbp-af-header" id="cssmenu">
+                <div class="container navbar-collapse">
+                    <div class="logo">
+                        <?= anchor('', img('assets/images/logo.jpg'), 'class="header-logo"'); ?>
+                    </div>
+                    <div class="button"></div>
+                    <ul class="navbar-nav ml-auto" id="nav">
+                        <li>
+                            <?= anchor('', "Home"); ?>
+                        </li>
+                        <li>
+                            <?= anchor('about', " About Us"); ?>
+                        </li>
+                        <li>
+                            <?= anchor('services', "Our Services"); ?>
+                        </li>
+                        <li>
+                            <?= anchor('gallery', "Gallery"); ?>
+                        </li>
+                        <li>
+                            <?= anchor('career', "Career"); ?>
+                        </li>
+                        <li>
+                            <?= anchor('faq', "Faq"); ?>
+                        </li>
+                        <li>
+                            <?= anchor('contact', "Contact"); ?>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <?php if (isset($bread)): ?>
+        <div class="inner-page-hero-area bg-com jarallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="inner-page-hero-text">
+                            <div class="inner-page-title"><?= $bread ?></div>
+                            <ul class="inner-page-u">
+                                <li><?= anchor('', "Home", 'class="text-white"'); ?></li>
+                                <li><?= $bread ?></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endif ?>
+        
+        <?= $contents ?>
+
+        <!-- Footer -->
+        <footer id="footer-area" class="bg-black section-color bg-com pt-80 pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="footer-copy-logo pb-70">
+                            <li><a href="javascript:;"><?= img('assets/images/logo/logo3.jpg') ?></a></li>
+                            <li><a href="javascript:;"><?= img('assets/images/logo/f1.png') ?></a></li>
+                            <li><a href="javascript:;"><?= img('assets/images/logo/f2.png') ?></a></li>
+                            <li><a href="javascript:;"><?= img('assets/images/logo/f3.png') ?></a></li>
+                            <li><a href="javascript:;"><?= img('assets/images/logo/f4.png"') ?></a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-widget pt-40">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget-item mt-40">
+                                <h6 class="footer-widget-title">About Us</h6>
+                                <p>We have the skilled and qualified staffs to install the security system protects your
+                                place and what </p>
+                                <p>Skilled and qualified staffs to install the security system protects your place and what
+                                are the recent.</p>
                             </div>
-                            <div class="top-right">
-                                <ul class="social-icon-one">
-                                    <li><a href="<?= $this->config->item('facebook') ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="<?= $this->config->item('twitter') ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="<?= $this->config->item('google-plus') ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="<?= $this->config->item('pinterest') ?>" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                    <li><a href="<?= $this->config->item('dribbble') ?>" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget-item mt-40">
+                                <h6 class="footer-widget-title">Useful links</h6>
+                                <ul class="footer-link">
+                                    <li>
+                                        <?= anchor('', "Home"); ?>
+                                    </li>
+                                    <li>
+                                        <?= anchor('about', " About Us"); ?>
+                                    </li>
+                                    <li>
+                                        <?= anchor('services', "Our Services"); ?>
+                                    </li>
+                                    <li>
+                                        <?= anchor('gallery', "Gallery"); ?>
+                                    </li>
+                                    <li>
+                                        <?= anchor('career', "Career"); ?>
+                                    </li>
+                                    <li>
+                                        <?= anchor('faq', "FAQ"); ?>
+                                    </li>
+                                    <li>
+                                        <?= anchor('contact', "Contact"); ?>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget-item mt-40">
+                                <h6 class="footer-widget-title">SERVICES</h6>
+                                <ul class="footer-link">
+                                    <?php foreach ($this->config->item('services') as $k => $service): if($k === 6) break ?>
+                                        <li>
+                                            <?= anchor($service['slug'], $service['name']); ?>
+                                        </li>
+                                    <?php endforeach ?>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget-item mt-40">
+                                <h6 class="footer-widget-title">SERVICES</h6>
+                                <ul class="footer-link">
+                                    <?php foreach ($this->config->item('services') as $k => $service): if($k <= 5) continue ?>
+                                        <li>
+                                            <?= anchor($service['slug'], $service['name']); ?>
+                                        </li>
+                                    <?php endforeach ?>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- End Header Top -->
-
-                <!-- Header Lower -->
-                <div class="header-lower">
-                    <div class="auto-container">
-                        <div class="main-box margin clearfix">
-                            <!--Logo Box-->
-                            <div class="logo-box display_none">
-                                <div class="logo">
-                                    <?= anchor('', img('assets/images/logo.png')); ?>
-                                </div>
-                            </div>
-
-                            <!--Nav Outer-->
-                            <div class="nav-outer clearfix">
-                                <!-- Main Menu -->
-                                <nav class="main-menu">
-                                    <div class="navbar-header">
-                                        <!-- Toggle Button -->
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                    </div>
-
-                                    <div class="navbar-collapse collapse clearfix">
-                                        <ul class="navigation clearfix">
-                                            <li>
-                                                <?= anchor('', "Home"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('about', "About Us"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('categories', "Our Products"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('trending-product', "Trending Products"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('tutorials', "Tutorials"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('gallery', "Gallery"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('contact', "Contact us"); ?>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <!-- Main Menu End-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Header Lower -->
-
-                <!--Sticky Header-->
-                <div class="sticky-header">
-                    <div class="auto-container clearfix">
-                        <!--Logo-->
-                        <div class="logo pull-left">
-                            <?= anchor('', img('assets/images/silvics-small.png'), 'class="img-responsive"'); ?>
-                        </div>
-                        <!--Right Col-->
-                        <div class="right-col pull-right">
-                            <!-- Main Menu -->
-                            <nav class="main-menu">
-                                <div class="navbar-header">
-                                    <!-- Toggle Button -->
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-
-                                <div class="navbar-collapse collapse clearfix">
-                                    <ul class="navigation clearfix">
-                                        <li>
-                                            <?= anchor('', "Home"); ?>
-                                        </li>
-                                        <li>
-                                            <?= anchor('about', "About Us"); ?>
-                                        </li>
-                                        <li>
-                                            <?= anchor('categories', "Our Products"); ?>
-                                        </li>
-                                        <li>
-                                            <?= anchor('trending-product', "Trending Products"); ?>
-                                        </li>
-                                        <li>
-                                            <?= anchor('tutorials', "Tutorials"); ?>
-                                        </li>
-                                        <li>
-                                            <?= anchor('gallery', "Gallery"); ?>
-                                        </li>
-                                        <li>
-                                            <?= anchor('contact', "Contact us"); ?>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                            <!-- Main Menu End-->
-                        </div>
-                    </div>
-                </div>
-                <!--End Sticky Header-->
-            </header>
-            <?php if(isset($bread)):  ?>
-            <!--Page Title-->
-            <section class="page-title" style="background-image:url(<?= base_url('assets/images/breadcumb.jpg') ?>);">
-                <div class="auto-container">
-                    <div class="inner-container clearfix">
-                        <h1><?= $bread ?></h1>
-                        <ul class="bread-crumb clearfix">
-                            <li><?= anchor('', 'Home') ?></li>
-                            <li><a href="javascript:;"><?= $bread ?></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!--End Page Title-->
-            <?php endif  ?>
-            <?= $contents ?>
-            <!-- Main Footer -->
-            <footer class="main-footer">
-                <div class="auto-container">
-                    <!--Widgets Section-->
-                    <div class="widgets-section">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="footer-widget about-widget">
-                                    <div class="footer-logo">
-                                        <figure>
-                                            <?= anchor('', img('assets/images/logo.png')); ?>
-                                        </figure>
-                                    </div>
-                                    <div class="widget-content">
-                                        <div class="text">Silvic Wood Veneers Pvt. Ltd. is Ahmedabad based organization working towards an excellence in the manufacture of decorative veneers. Our experience and knowledge made us experts in our craft and class.</div>
-                                        <ul class="social-icon-two">
-                                            <li><a href="<?= $this->config->item('facebook') ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="<?= $this->config->item('twitter') ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="<?= $this->config->item('linkedin') ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="<?= $this->config->item('google-plus') ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a href="<?= $this->config->item('pinterest') ?>" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="footer-widget links-widget">
-                                    <h2 class="widget-title">Quick Link</h2>
-                                    <div class="widget-content">
-                                        <ul class="list">
-                                            <li>
-                                                <?= anchor('', "Home"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('about', "About Us"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('categories', "Our Products"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('trending-product', "Trending Products"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('tutorials', "Tutorials"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('gallery', "Gallery"); ?>
-                                            </li>
-                                            <li>
-                                                <?= anchor('contact', "Contact us"); ?>
-                                            </li>
-                                            <li><a href="javascript:;">Terms & Condition</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="footer-widget contact-widget">
-                                    <h2 class="widget-title">Contact us</h2>
-                                    <div class="widget-content">
-                                        <ul class="contact-list">
-                                            <li><span class="fa fa-volume-control-phone clr_white"></span><?= $this->config->item('mobile1') ?></li>
-                                            <li><span class="fa fa-envelope clr_white"></span><a href="mailto:<?= $this->config->item('email') ?>"><?= $this->config->item('email') ?></a></li>
-                                            <li><span class="fa fa-map-marker clr_white"></span><?= $this->config->item('address1') ?></li>
-                                            <li><span class="fa fa-map-marker clr_white"></span><?= $this->config->item('address2') ?></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Footer Bottom-->
-                <div class="footer-bottom">
-                    <div class="auto-container">
-                        <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-up clr_white clr_marun"></span></div>
-                        <div class="copyright-text">© <?= date('Y') ?> Silvics All rights reserved Proudly powered by Amaze Web Solution</div>
-                    </div>
-                </div>
-            </footer>
-            <!-- End Main Footer -->
-            <!-- Phone Stickey -->
-            <div class="phone quick-alo-phone">
-                <a href="tel:<?= $this->config->item('mobile3') ?>">
-                    <div class="quick-alo-ph-img-circle"></div>
-                </a>
             </div>
-            <!-- Phone Stickey -->
-            <!-- Whatsapp Stickey -->
-            <a href="https://api.whatsapp.com/send?phone=<?= $this->config->item('mobile3') ?>&text=Hello" class="float" target="_blank">
-                <i class="fa fa-whatsapp my-float"></i>
-            </a>
-            <!-- Whatsapp Stickey -->
+        </footer>
+        <!-- End Footer -->
+        <!-- Copy Right -->
+        <div id="copy-right-area" class="section-color bg-black pt-30 pb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="cta-text d-flex flex-lg-row flex-column align-items-center justify-content-start">
+                            <div class="text-lg-left text-center">
+                                <p>Proudly powered by Amaze Web Solutions</p>
+                            </div>
+                            <div class="ml-lg-auto">
+                                <div class="d-flex flex-row align-items-center justify-content-center">
+                                    <p>© Copyrights <?= date('Y') ?> Bulls Watch All rights reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <?= script("assets/js/jquery.js") ?>
+        <!-- End Copy Right -->
+
+        <!-- Top Preloader -->
+        <div id="preloader">
+            <div class="lds-css">
+                <div class="preloader-3">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Preloader -->
+
+        <!-- Phone Icon -->
+        <div class="phone quick-alo-phone">
+            <a href="tel:<?= $this->config->item('mobile') ?>">
+                <div class="quick-alo-ph-circle"></div>
+                <div class="quick-alo-ph-circle-fill"></div>
+                <div class="quick-alo-ph-img-circle"></div>
+            </a>
+        </div>
+        <!-- Phone Icon -->
+
+        <!-- Whatsapp Icon -->
+        <a href="https://api.whatsapp.com/send?phone=<?= $this->config->item('mobile') ?>&text=Hello" class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+
+        <!-- Whatsapp Icon -->
+        <?= script("assets/js/jquery-3.4.1.min.js") ?>
         <?= script("assets/js/bootstrap.min.js") ?>
-        <?php if(isset($owl)):  ?>
-        <?= script("assets/js/owl.js") ?>
-        <?php endif  ?>
-        <?php if(isset($fancybox)):  ?>
-        <?= script("assets/js/jquery.fancybox.js") ?>
-        <?= script("assets/js/isotope.js") ?>
-        <?php endif  ?>
-        <?php if(isset($validate)):  ?>
-        <?= script("assets/js/validate.js") ?>
+        <?= script("assets/js/popper.min.js") ?>
+        <?= script("assets/js/carousel.min.js") ?>
+        <?= script("assets/js/wow.min.js") ?>
+        <?= script("assets/js/parallax.min.js") ?>
+        <?= script("assets/js/jquery.magnific-popup.min.js") ?>
+        <?= script("assets/js/counter.js") ?>
+        <?= script("assets/js/menu.js") ?>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+        <?= script("assets/js/secrius-script.js") ?>
         <!-- Modal -->
         <div id="responseModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg">
@@ -285,20 +224,16 @@
                         <h3 class="modal-title">Response Message</h3>
                     </div>
                     <div class="modal-body">
-                        <section class="contact-page-section mt-1">
-                            <div class="text-center">
-                                <h3 id="responseData"></h3>
-                            </div>
-                        </section>
+                        <div class="text-center">
+                            <h4 id="responseData"></h4>
+                        </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="theme-btn btn-style-two" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn-1 hover-effect" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Modal End -->
-        <?php endif  ?>
-        <?= script("assets/js/custom.js") ?>
     </body>
 </html>

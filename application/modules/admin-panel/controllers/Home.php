@@ -17,9 +17,17 @@ class Home extends Admin_controller  {
 	public function getInquiry($id)
 	{
         $this->load->model('inquiry_model');
-        $data = $this->inquiry_model->get('inquiry i', 'i.name, i.email, i.mobile, p.p_name, i.subject, i.message', ['i.id' => d_id($id)]);
+        $data = $this->inquiry_model->get('inquiry', 'name, email, mobile, company, requirements, message', ['id' => d_id($id)]);
         
         die($this->load->view(admin('inquiry/getInquiry'), $data, TRUE));
+	}
+    
+	public function getApply($id)
+	{
+        $this->load->model('apply_model');
+        $data = $this->apply_model->get('job_apply a', 'c.c_title, a.name, a.subject, a.email, a.phone, a.aadhar, a.message, a.resume, a.image, a.police_certy, a.licence', ['a.id' => d_id($id)]);
+        $this->path = $this->config->item('apply');
+        die($this->load->view(admin('apply/getApply'), $data, TRUE));
 	}
 
 	public function profile()

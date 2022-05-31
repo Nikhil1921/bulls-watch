@@ -92,5 +92,15 @@ const script = {
             },
         });
         return;
+    },
+    viewApply: function(id) {
+        $.ajax({
+            url: `${url}getApply/${id}`,
+            success: function (data) {
+                $("#apply-details").html(data);
+                $("#applyModal").modal();
+            },
+        });
+        return;
     }
 };

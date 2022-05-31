@@ -30,23 +30,23 @@
             ]); ?>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-12">
         <div class="form-group">
-            <?= form_label('Product') ?>
+            <?= form_label('Company') ?>
             <?= form_input([
                 'class' => "form-control",
                 'readonly' => "",
-                'value' => isset($p_name) ? $p_name : ''
+                'value' => isset($company) ? $company : ''
             ]); ?>
         </div>
     </div>
     <div class="col-md-12">
         <div class="form-group">
-            <?= form_label('Subject') ?>
-            <?= form_input([
+            <?= form_label('Requirements') ?>
+            <?= form_textarea([
                 'class' => "form-control",
                 'readonly' => "",
-                'value' => isset($subject) ? $subject : ''
+                'value' => isset($requirements) ? $requirements : ''
             ]); ?>
         </div>
     </div>

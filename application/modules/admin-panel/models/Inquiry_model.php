@@ -6,17 +6,16 @@
 class Inquiry_model extends MY_Model
 {
 	public $table = "inquiry i";
-	public $select_column = ['i.id', 'i.name', 'i.mobile', 'i.email', 'p.p_name'];
-	public $search_column = ['i.name', 'i.mobile', 'i.email', 'p.p_name'];
-    public $order_column = [null, 'i.name', 'i.mobile', 'i.email', 'p.p_name', null, null];
+	public $select_column = ['i.id', 'i.name', 'i.mobile', 'i.email'];
+	public $search_column = ['i.name', 'i.mobile', 'i.email'];
+    public $order_column = [null, 'i.name', 'i.mobile', 'i.email', null];
 	public $order = ['i.id' => 'DESC'];
 
 	public function make_query()
 	{  
 		$this->db->select($this->select_column)
             	 ->from($this->table)
-				 ->where('i.is_deleted', 0)
-				 ->join('products p', 'p.id = i.prod_id', 'left');
+				 ->where('i.is_deleted', 0);
 
         $this->datatable();
 	}
@@ -25,8 +24,7 @@ class Inquiry_model extends MY_Model
 	{
 		$this->db->select('i.id')
 		         ->from($this->table)
-				 ->where('i.is_deleted', 0)
-				 ->join('products p', 'p.id = i.prod_id', 'left');
+				 ->where('i.is_deleted', 0);
 		            	
 		return $this->db->get()->num_rows();
 	}
@@ -35,9 +33,8 @@ class Inquiry_model extends MY_Model
 	{
 		$this->db->select($select)
 		         ->from($table)
-				 ->where($where)
-				 ->join('products p', 'p.id = i.prod_id', 'left');
-		            	
+				 ->where($where);
+
 		return $this->db->get()->row_array();
 	}
 }

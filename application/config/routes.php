@@ -12,14 +12,14 @@ $route[ADMIN."/dashboard"] = ADMIN."/home";
 
 // front routes
 $route["about"] = "home/about";
-$route["categories"] = "home/categories";
-$route["trending-product"] = "home/trending_product";
-$route["tutorials"] = "home/tutorials";
+$route["services"] = "home/services";
 $route["gallery"] = "home/gallery";
+$route["career"] = "home/career";
+$route["faq"] = "home/faq";
 $route["contact"] = "home/contact";
+$route["apply"] = "home/apply";
 
 if(strpos(PATH_INFOS, ADMIN) === false)
 {
-    $route["(:any)"] = "home/category/$1";
-    $route["(:any)/(:any)"] = "home/product/$1/$2";
+    $route["(:any)"] = "home/service/$1";
 }

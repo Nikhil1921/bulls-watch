@@ -33,7 +33,6 @@ class Inquiry extends Admin_controller  {
             $sub_array[] = $row->name;
             $sub_array[] = $row->mobile ? $row->mobile : 'NA';
             $sub_array[] = $row->email;
-            $sub_array[] = $row->p_name ? $row->p_name : 'NA';
             
             $action = '<div class="dropdown">
                           <button type="button" class="btn btn-round btn-outline-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-expanded="false">
