@@ -595,8 +595,12 @@
     ========================================
     */
     .hero-three-text {
-        padding: 0px 0 139px;
+        padding: 0px 0 182px;
     }
+    /* .hero-three-text {
+        color: #fff;
+        padding: 0px 0 186px !important;
+    } */
     .home-three-promo-item {
         margin-bottom: 20px;
     }

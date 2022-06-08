@@ -434,7 +434,7 @@
     height: 180px;
     margin: 0 auto;
     border-radius: 100%;
-    border: 10px solid rgba(0, 0, 0, 0.26);
+    /* border: 10px solid rgba(0, 0, 0, 0.26); */
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
