@@ -19,3 +19,4 @@ $config['bank'] = [
 ];
 
 $config['gst'] = '24AXPPS1104D2ZR';
+$config['sln'] = 'PSA/L/11/GJ/2022/MAY/3/1019';
