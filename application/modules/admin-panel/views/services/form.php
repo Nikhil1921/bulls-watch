@@ -82,7 +82,13 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <?= form_label('Description', 'description', 'class="col-form-label"') ?>
-                        <textarea name="description" id="description" class="form-control ckeditor" required=""><?= set_value('description') ? set_value('description') : (isset($data['description']) ? $data['description'] : '') ?></textarea>
+                        <?= form_textarea([
+                            'class' => "form-control ckeditor",
+                            'id' => "description",
+                            'name' => "description",
+                            'required' => "",
+                            'value' => set_value('description') ? html_entity_decode(set_value('description')) : (isset($data['description']) ? $data['description'] : '')
+                        ]); ?>
                         <?= form_error('description') ?>
                     </div>
                 </div>
