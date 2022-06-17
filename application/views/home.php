@@ -25,7 +25,7 @@
             </div>
             <div class="col-lg-6 installation-col">
                 <div class="installation-content">
-                    <h2 class="hading-title">Falanu
+                    <h2 class="hading-title">Welcome to Bulls Watch
                     <span>Security Services & Surveillance Squad </span> </h2>
                     <p>We are having 10+ Years Experience in Security Services. We offer Highly Educated & Trained Staff to our clients all over Gujarat. Our security professional work round the clock towards the common objective of protecting the assets, property and life. With a sharp focus on security, we extend our services in close co-operation with customer providing specialized and customized security solutions.</p>
                     <ul class="twocolumn list-icons">
