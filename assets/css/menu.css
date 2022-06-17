@@ -652,8 +652,8 @@ nav {
 .contact_style3 .contact_icon {
     border: 1px solid #012f5d;
     margin: 0 0 5px;
-    height: 80px;
-    width: 80px;
+    height: 65px;
+    width: 65px;
     text-align: center;
     display: inline-block;
     overflow: hidden;
@@ -680,7 +680,7 @@ nav {
 }
 
 .contact_style3 .contact_icon i {
-    line-height: 78px;
+    line-height: 66px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -719,8 +719,8 @@ nav {
     background-color: transparent;
     width: 82px;
     height: 64px;
-    left: 0;
-    top: 65%;
+    right: 125px;
+    top: 76px;
     cursor: pointer;
     z-index: 200000 !important;
     -webkit-backface-visibility: hidden;

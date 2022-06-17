@@ -80,7 +80,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <ul class="footer-copy-logo pb-70">
-                            <li><a href="javascript:;"><?= img('assets/images/logo/logo3.jpg') ?></a></li>
+                            <!-- <li><a href="javascript:;"><?= img('assets/images/logo/logo3.jpg') ?></a></li> -->
                             <li><a href="javascript:;"><?= img('assets/images/logo/f1.png') ?></a></li>
                             <li><a href="javascript:;"><?= img('assets/images/logo/f2.png') ?></a></li>
                             <li><a href="javascript:;"><?= img('assets/images/logo/f3.png') ?></a></li>

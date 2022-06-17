@@ -37,19 +37,19 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
-                    <div class="border-bottom border-top pb-30 pt-35">
-                        <h2>Bank Details</h2>
-                        <div class="trainers-information">
-                            <ul>
-                                <li><span>Bank Name:</span> <?= $this->config->item('bank')['name'] ?></li>
-                                <li><span>Bank Branch:</span> <?= $this->config->item('bank')['branch'] ?></li>
-                                <li><span>Account Number:</span> <?= $this->config->item('bank')['acc_no'] ?></li>
-                                <li><span>IFSC Code:</span> <?= $this->config->item('bank')['ifsc'] ?></li>
-                            </ul>
-                        </div>
+            <!-- <div class="col-lg-12">
+                <div class="border-bottom border-top pb-30 pt-35">
+                    <h2>Bank Details</h2>
+                    <div class="trainers-information">
+                        <ul>
+                            <li><span>Bank Name:</span> <?= $this->config->item('bank')['name'] ?></li>
+                            <li><span>Bank Branch:</span> <?= $this->config->item('bank')['branch'] ?></li>
+                            <li><span>Account Number:</span> <?= $this->config->item('bank')['acc_no'] ?></li>
+                            <li><span>IFSC Code:</span> <?= $this->config->item('bank')['ifsc'] ?></li>
+                        </ul>
                     </div>
                 </div>
+            </div> -->
             <div class="col-lg-12 pt-40 pb-30 border-bottom">
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped product-table text-center">
@@ -64,7 +64,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>-</td>
+                                <td><?= $this->config->item('sln') ?></td>
                                 <td><?= $this->config->item('gst') ?></td>
                                 <td>-</td>
                                 <td>-</td>
