@@ -40,7 +40,7 @@ Css Style
 */
 
 @import "helper.css";
-@import "menu.css";
+@import "menu.css?v=1.0.1";
 /*
 ========================================
 Page Style
@@ -50,7 +50,7 @@ Page Style
 @import "style-1.css";
 @import "style-2.css";
 @import "style-3.css";
-@import "style-4.css";
+@import "style-4.css?v=1.0.1";
 @import "style-5.css";
 @import "style-6.css";
 

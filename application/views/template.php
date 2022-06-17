@@ -15,7 +15,7 @@
         <?= link_tag('assets/css/magnific-popup.css', 'stylesheet', 'text/css') ?>
         <?= link_tag('assets/css/carousel.min.css', 'stylesheet', 'text/css') ?>
         <?= link_tag('assets/css/secrius-style.css', 'stylesheet', 'text/css') ?>
-        <?= link_tag('assets/css/responsive.css', 'stylesheet', 'text/css') ?>
+        <?= link_tag('assets/css/responsive.css?v=1.0.1', 'stylesheet', 'text/css') ?>
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
