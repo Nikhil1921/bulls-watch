@@ -47,6 +47,9 @@
                         <li <?= $name === 'banner' ? 'class="active"' : '' ?>>
                             <?= anchor(admin('banner'), '<i class="fa fa-image"></i> banner') ?>
                         </li>
+                        <li <?= $name === 'services' ? 'class="active"' : '' ?>>
+                            <?= anchor(admin('services'), '<i class="fa fa-users"></i> services') ?>
+                        </li>
                         <li <?= $name === 'testimonial' ? 'class="active"' : '' ?>>
                             <?= anchor(admin('testimonial'), '<i class="fa fa-users"></i> testimonial') ?>
                         </li>
@@ -148,6 +151,7 @@
         <?php if(isset($image)): ?>
         <?= script("assets/back/js/plugins/jasny-bootstrap.min.js") ?>
         <?php endif ?>
+        <?= script('assets/back/js/plugins/ckeditor/ckeditor.js') ?>
         <?= script("assets/back/js/script.js") ?>
     </body>
 </html>

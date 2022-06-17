@@ -25,7 +25,11 @@ const showNotification = (msg, type) => {
             },
         }
     );
-  }
+}
+
+const changeSlug = (str) => {
+    document.getElementById("slug").value = str.replaceAll(/[&\/\\#,+()$~%.'":*?<>{}]/g, "").replaceAll(" ", "-").replaceAll("--", "-").toLowerCase();
+}
 
 $(document).ready(function () {
     if($('.full-page').length > 0) checkFullPageBackgroundImage();

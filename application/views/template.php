@@ -131,7 +131,7 @@
                             <div class="footer-widget-item mt-40">
                                 <h6 class="footer-widget-title">SERVICES</h6>
                                 <ul class="footer-link">
-                                    <?php foreach ($this->config->item('services') as $k => $service): if($k === 6) break ?>
+                                    <?php foreach ($this->services as $k => $service): if($k === 6) break ?>
                                         <li>
                                             <?= anchor($service['slug'], $service['name']); ?>
                                         </li>
@@ -143,7 +143,7 @@
                             <div class="footer-widget-item mt-40">
                                 <h6 class="footer-widget-title">SERVICES</h6>
                                 <ul class="footer-link">
-                                    <?php foreach ($this->config->item('services') as $k => $service): if($k <= 5) continue ?>
+                                    <?php foreach ($this->services as $k => $service): if($k <= 5) continue ?>
                                         <li>
                                             <?= anchor($service['slug'], $service['name']); ?>
                                         </li>

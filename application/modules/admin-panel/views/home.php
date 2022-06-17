@@ -84,4 +84,25 @@
             <div class="card-footer"></div>
         </div>', 'class="text-decoration-none"') ?>
     </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <?= anchor(admin('services'), '<div class="card card-stats">
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-5 col-md-4">
+                        <div class="icon-big text-center icon-danger">
+                            <i class="fa fa-file-text-o text-danger"></i>
+                        </div>
+                    </div>
+                    <div class="col-7 col-md-8">
+                        <div class="numbers">
+                                <p class="card-category">Services</p>
+                                <p class="card-title">'.$this->main->counter('services', ['is_deleted' => 0]).'</p><p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer"></div>
+        </div>', 'class="text-decoration-none"') ?>
+    </div>
 </div>

@@ -1,11 +1,11 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends Public_controller {
-	
+
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->config('services');
+		$this->services = $this->main->getAll('services', 'image, slug, name, title, description', ['is_deleted' => 0]);
 	}
 
 	public function index()
@@ -228,8 +228,8 @@ class Home extends Public_controller {
 
 	public function service($service)
 	{
-		$services = $this->config->item('services');
-		$service = array_filter($this->config->item('services'), function($s) use ($service) {
+		
+		$service = array_filter($this->services, function($s) use ($service) {
 			if($s['slug'] === $service) return $s;
 		});
 
