@@ -609,6 +609,8 @@
     background-repeat: no-repeat;
 }
 
+
+
 .quote-four-area::after {
     right: 0;
     background-image: url(../images/quote-map.png);
@@ -907,4 +909,8 @@
 
 .logo a img {
     max-width: 36% !important;
+}
+
+.home-three-about-content ul li {
+    list-style: disc !important;
 }
