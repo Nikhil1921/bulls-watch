@@ -20,7 +20,7 @@
             <div class="col-lg-6">
                 <div class="inner-about-quote">
                     <div class="installation-img">
-                        <?= img('assets/images/about.png'); ?>
+                        <?= img('assets/images/about1.png'); ?>
                     </div>
                 </div>
             </div>
