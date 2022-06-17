@@ -95,7 +95,7 @@
     position: absolute;
     background: #ffffff;
     width: 37%;
-    height: 207px;
+    height: 264px;
     left: 0;
     top: -108%;
     -webkit-clip-path: polygon(0 0, 100% 0, 89% 100%, 0% 100%);
@@ -906,5 +906,5 @@
 }
 
 .logo a img {
-    max-width: 66% !important;
+    max-width: 36% !important;
 }
