@@ -127,28 +127,26 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-6 col-md-6">
                             <div class="footer-widget-item mt-40">
-                                <h6 class="footer-widget-title">SERVICES</h6>
-                                <ul class="footer-link">
-                                    <?php foreach ($this->services as $k => $service): if($k === 6) break ?>
-                                        <li>
-                                            <?= anchor($service['slug'], $service['name']); ?>
-                                        </li>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <h6 class="footer-widget-title">SERVICES</h6>
+                                    </div>
+                                    <?php $services = array_chunk($this->services, ceil(count($this->services) / 2)); 
+                                    foreach ($services as $service): ?>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="footer-link">
+                                            <?php 
+                                                    foreach ($service as $k => $s): ?>
+                                                <li>
+                                                    <?= anchor($s['slug'], $s['name']); ?>
+                                                </li>
+                                            <?php endforeach ?>
+                                        </ul>
+                                    </div>
                                     <?php endforeach ?>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-widget-item mt-40">
-                                <h6 class="footer-widget-title"></h6>
-                                <ul class="footer-link">
-                                    <?php foreach ($this->services as $k => $service): if($k <= 5) continue ?>
-                                        <li>
-                                            <?= anchor($service['slug'], $service['name']); ?>
-                                        </li>
-                                    <?php endforeach ?>
-                                </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
