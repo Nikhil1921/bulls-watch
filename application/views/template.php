@@ -24,7 +24,7 @@
             <nav class="navbar navbar-expand-lg top-nav navbar-fixed-top cbp-af-header" id="cssmenu">
                 <div class="container navbar-collapse">
                     <div class="logo">
-                        <?= anchor('', img('assets/images/logo.svg'), 'class="header-logo"'); ?>
+                        <?= anchor('', img('assets/images/logo1.svg'), 'class="header-logo"'); ?>
                     </div>
                     <div class="button"></div>
                     <ul class="navbar-nav ml-auto" id="nav">
