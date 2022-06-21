@@ -24,7 +24,7 @@
             <nav class="navbar navbar-expand-lg top-nav navbar-fixed-top cbp-af-header" id="cssmenu">
                 <div class="container navbar-collapse">
                     <div class="logo">
-                        <?= anchor('', img('assets/images/logo.svg'), 'class="header-logo"'); ?>
+                        <?= anchor('', img('assets/images/logo1.svg'), 'class="header-logo"'); ?>
                     </div>
                     <div class="button"></div>
                     <ul class="navbar-nav ml-auto" id="nav">
@@ -141,7 +141,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="footer-widget-item mt-40">
-                                <h6 class="footer-widget-title">SERVICES</h6>
+                                <h6 class="footer-widget-title"></h6>
                                 <ul class="footer-link">
                                     <?php foreach ($this->services as $k => $service): if($k <= 5) continue ?>
                                         <li>
