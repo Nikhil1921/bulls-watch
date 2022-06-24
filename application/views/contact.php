@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row contact_main">
             <div class="col-xl-4 col-md-6">
-                <div class="contact_wrap contact_style3">
+                <div class="contact_wrap contact_style3 address">
                     <div class="contact_icon">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>

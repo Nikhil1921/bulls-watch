@@ -21,8 +21,11 @@
     </head>
     <body>
         <div id="menu-4" class="menu-4">
+            <!-- Top Preloader -->
+        <div class="preloader"></div>
+        <!-- End Top Preloader -->
             <nav class="navbar navbar-expand-lg top-nav navbar-fixed-top cbp-af-header" id="cssmenu">
-                <div class="container navbar-collapse">
+                <div class="container-fluid logo-center navbar-collapse">
                     <div class="logo">
                         <?= anchor('', img('assets/images/logo1.svg'), 'class="header-logo"'); ?>
                     </div>
@@ -161,7 +164,7 @@
                     <div class="col-lg-12">
                         <div class="cta-text d-flex flex-lg-row flex-column align-items-center justify-content-start">
                             <div class="text-lg-left text-center">
-                                <p>Proudly powered by Amaze Web Solutions</p>
+                                <p>Proudly powered by <a class="url-color" href="https://amazewebsolutions.com/" target="_blank">Amaze Web Solutions</a></p>
                             </div>
                             <div class="ml-lg-auto">
                                 <div class="d-flex flex-row align-items-center justify-content-center">
@@ -175,16 +178,7 @@
         </div>
         <!-- End Copy Right -->
 
-        <!-- Top Preloader -->
-        <div id="preloader">
-            <div class="lds-css">
-                <div class="preloader-3">
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <!-- End Top Preloader -->
+        
 
         <!-- Phone Icon -->
         <div class="phone quick-alo-phone">
