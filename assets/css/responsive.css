@@ -327,18 +327,18 @@
     }
 
     .quick-alo-phone {
-    position: fixed;
-    background-color: transparent;
-    width: 82px;
-    height: 64px;
-    left: -77px;
-    top: 65%;
-    cursor: pointer;
-    z-index: 200000 !important;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transition: visibility .5s;
-}
+        position: fixed;
+        background-color: transparent;
+        width: 82px;
+        height: 64px;
+        right: 125px;
+        top: 25px;
+        cursor: pointer;
+        z-index: 200000 !important;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        transition: visibility .5s;
+    }
     /*
     ========================================
             Home Four
@@ -398,6 +398,19 @@
     }
     .header-four-social {
         text-align: left;
+    }
+    .quick-alo-phone {
+        position: fixed;
+        background-color: transparent;
+        width: 82px;
+        height: 64px;
+        right: 125px;
+        top: 25px;
+        cursor: pointer;
+        z-index: 200000 !important;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        transition: visibility .5s;
     }
     /*
     ========================================
@@ -512,19 +525,40 @@
     }
 
     .quick-alo-phone {
-    position: fixed;
-    background-color: transparent;
-    width: 82px;
-    height: 64px;
-    left: -77px !important;
-    top: 65%;
-    cursor: pointer;
-    z-index: 200000 !important;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transition: visibility .5s;
-}
+        position: fixed;
+        background-color: transparent;
+        width: 45px !important;
+        height: 45px !important;
+        right: 125px;
+        top: 25px;
+        cursor: pointer;
+        z-index: 200000 !important;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+        transition: visibility .5s;
+    }
 
+    .quick-alo-ph-circle {
+        display: none;
+    }
+
+    .quick-alo-ph-circle-fill {
+        display: none;
+    }
+
+    .quick-alo-ph-img-circle {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 62px;
+        left: 100px;
+        background: #0a58ad url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABrklEQVRYR82XjTEEQRCFX0dABlwEiAARkAEyIAJEoERACETARUAIJwIyeOqptfbm5qeP3lpTdVVXVzPd3/R0v+4zTLxsYv/4XwAkrwDsV6JyZmaLyKj1ESB5AOCpYfzazAQZttYFuDWz8zDvwE8OkNwF8NIwvjCz2SgAMkqSDuOzyDxYqgKSrwB2GhBKxHsHqGtLCiDDJ42Tj2Z27LLu2JQCnAK4a5x7M7Nth23XlhRgE8B74+SemempQtaKEpKsPUPo++sGOYCSIIU7zwJ05ficSLLkV6H/CIn7wEi2GRVkOVwFixEoREE/hz9DsR2TVKkp2zeSsI9bBUNnJNV4bhIA5cFhVCk2B5JCWVYhSEopjwAob6qa4QGQOKkqcj1iJSdIpmoqWEHIhr7Ph1BNgC4haxAPAC7UITPOc1UrCOXR12TlAnBAyKhAdHvPUg4pIn6AAYQc1ebG8QC+LXfD66XHU2HP7yKQlKhGODWu1gCTY/g7wCAaendNyltrRCQOIAERjCc/ejV1V4H3dp2ES4jU1vVJpXxpogoHSEE7oOEIp9G+/3c1OkArcpMDfAIqL6EhVS6JOAAAAABJRU5ErkJggg==") no-repeat center center;
+        border-radius: 100%;
+        border: 2px solid transparent;
+        opacity: .99;
+        animation: quick-alo-circle-img-anim 1s infinite ease-in-out;
+        transform-origin: 50% 50%;
+    }
 .float {
     position: fixed;
     width: 60px;
@@ -595,7 +629,7 @@
     ========================================
     */
     .hero-three-text {
-        padding: 0px 0 182px;
+        padding: 0px 0 155px;
     }
     /* .hero-three-text {
         color: #fff;
@@ -1042,6 +1076,7 @@
     .navbar-collapse {
         background: #ffffff !important;
     }
+    
 }
 
 @media (max-width: 376px) {
@@ -1162,3 +1197,4 @@
         background: #ffffff !important;
     }
 }
+
