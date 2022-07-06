@@ -922,7 +922,7 @@
 .url-color {
     color: #b6bbc5 !important;
 }
-.preloader {
+/* .preloader {
     position: fixed;
     left: 0px;
     top: 0px;
@@ -933,7 +933,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url('../images/logo.gif');
-}
+} */
 
 .logo-center {
     padding-left: 6%;
