@@ -530,7 +530,7 @@
         width: 45px !important;
         height: 45px !important;
         right: 125px;
-        top: 25px;
+        top: 5px;
         cursor: pointer;
         z-index: 200000 !important;
         -webkit-backface-visibility: hidden;

@@ -22,7 +22,14 @@
     <body>
         <div id="menu-4" class="menu-4">
             <!-- Top Preloader -->
-        <div class="preloader"></div>
+            <div id="preloader">
+                <div class="lds-css">
+                    <div class="preloader-3">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
         <!-- End Top Preloader -->
             <nav class="navbar navbar-expand-lg top-nav navbar-fixed-top cbp-af-header" id="cssmenu">
                 <div class="container-fluid logo-center navbar-collapse">
