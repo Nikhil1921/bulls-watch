@@ -33,6 +33,10 @@
         width: 40px;
         height: 40px;
     }
+
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
                 Home Two
@@ -50,6 +54,9 @@
     }
     .home-two-provide-item img {
         width: 100%;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
     /*
     ========================================
@@ -76,6 +83,9 @@
     }
     .hero-three-text {
         padding: 139px 0 216px;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
     /*
     ========================================
@@ -112,6 +122,9 @@
     }
     .promo-five {
         margin: -110px 0 0;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
 }
 
@@ -200,6 +213,9 @@
     .navbar-collapse {
         background: #ffffff !important;
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
 
     
     /*
@@ -251,6 +267,9 @@
     }
     .home-two-provide .section-title p br {
         display: none;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
     /*
     ========================================
@@ -339,6 +358,9 @@
         -webkit-transform: translateZ(0);
         transition: visibility .5s;
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
             Home Four
@@ -412,6 +434,9 @@
         -webkit-transform: translateZ(0);
         transition: visibility .5s;
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
             Home Five
@@ -438,6 +463,9 @@
     .hero-five-content {
         padding: 150px 0;
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
             Home Six
@@ -454,6 +482,9 @@
     }
     .cta-text h4 {
         padding: 20px 35px 20px 235px;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
 }
 
@@ -573,6 +604,10 @@
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
+
+.home-three-hero .owl-nav {
+    display: none  !important;
+}
     /*
     ========================================
                 Home Two
@@ -623,6 +658,9 @@
     .home-two-provide .section-title p br {
         display: none;
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
                 Home three
@@ -656,6 +694,9 @@
         padding-right: 0;
         font-size: 19px;
         float: left;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
     /*
     ========================================
@@ -748,6 +789,9 @@
             opacity: 1;
         }
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
             Home Four
@@ -823,6 +867,9 @@
     .quote-content {
         padding: 80px 20px;
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
             Home Five
@@ -860,6 +907,9 @@
     .promo-five .home-three-promo-item {
         margin-top: 40px;
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
             Home Six
@@ -879,6 +929,9 @@
     }
     .home-two-provide-item img {
         width: 100%;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
 }
 
@@ -934,6 +987,9 @@
     .navbar-collapse {
         background: #ffffff !important;
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
                 Home Two
@@ -958,6 +1014,9 @@
     .security-img {
         padding: 128px 0;
     }
+    .home-three-hero .owl-nav {
+        display: none  !important;
+    }
     /*
     ========================================
                 Home three
@@ -981,6 +1040,9 @@
     }
     .hero-tow-title {
         font-size: 35px;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
 }
 
@@ -1075,6 +1137,9 @@
     }
     .navbar-collapse {
         background: #ffffff !important;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
     
 }
@@ -1195,6 +1260,9 @@
     }
     .navbar-collapse {
         background: #ffffff !important;
+    }
+    .home-three-hero .owl-nav {
+        display: none  !important;
     }
 }
 
